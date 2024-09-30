@@ -26,6 +26,12 @@ public class Main {
             case "add":
                 add(firstNum,secondNum);
                 break;
+            case "sub":
+                sub(firstNum,secondNum);
+                break;
+            case "multiplication":
+                sub(firstNum,secondNum);
+                break;
             default:
                 System.out.println("Invalid operation. ");
                 break;
@@ -38,6 +44,10 @@ public class Main {
 
     public static void subtract(double first, double second){
         double result = first - second;
+        System.out.println("The total is "+ result);
+    }
+    public static void multiply(double first, double second){
+        double result = first * second;
         System.out.println("The total is "+ result);
     }
 

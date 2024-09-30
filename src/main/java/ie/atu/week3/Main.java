@@ -36,6 +36,12 @@ public class Main {
         System.out.println("The total is "+result);
     }
 
+    public static void subtract(double first, double second){
+        double result = first - second;
+        System.out.println("The total is "+ result);
+    }
+
+
 }
 
 

@@ -23,20 +23,33 @@ public class Main {
 
         boolean validOperation =true;
         switch(operation){
-            case "add":
+            case "addition":
                 add(firstNum,secondNum);
                 break;
-            case "sub":
-                sub(firstNum,secondNum);
+            case "subtraction":
+                subtract(firstNum,secondNum);
                 break;
             case "multiplication":
-                sub(firstNum,secondNum);
+                multiply(firstNum,secondNum);
+                break;
+            case "division":
+                divide(firstNum,secondNum);
+                break;
+            case "exponential":
+                exponential(firstNum,secondNum);
                 break;
             default:
                 System.out.println("Invalid operation. ");
                 break;
         }
     }
+
+    public static void exponential(double first, double second){
+        double result = Math.pow(first, second);
+        System.out.println("The total is "+ result);
+    }
+
+
     public static void add(double first, double second){
         double result = first + second;
         System.out.println("The total is "+result);
@@ -50,6 +63,13 @@ public class Main {
         double result = first * second;
         System.out.println("The total is "+ result);
     }
+    public static void divide(double first, double second){
+        double result = first/second;
+        System.out.println("The total is "+ result);
+    }
+
+
+
 
 
 }

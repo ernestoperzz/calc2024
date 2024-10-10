@@ -43,6 +43,13 @@ public class Main {
                 break;
         }
     }
+
+    public static void exponential(double first, double second){
+        double result = Math.pow(first, second);
+        System.out.println("The total is "+ result);
+    }
+
+
     public static void add(double first, double second){
         double result = first + second;
         System.out.println("The total is "+result);
@@ -60,10 +67,9 @@ public class Main {
         double result = first/second;
         System.out.println("The total is "+ result);
     }
-    public static void exponential(double first, double second){
-        double result = Math.pow(first, second);
-        System.out.println("The total is "+ result);
-    }
+
+
+
 
 
 }
